@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(45deg, #232526, #414345);
+  height: 100vh;
+}
+/* Tampilan untuk baris ganjil */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Tampilan untuk baris genap */
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Tampilan saat kursor berada di atas baris */
+tbody tr:hover {
+  background-color: #dddddd;
+}
+
+/* Padding untuk sel */
+table th,
+table td {
+  padding: 8px;
+}
+
+/* Tampilan header kolom */
+thead {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Tampilan link di dalam sel */
+table a {
+  color: #007bff; /* Warna biru standar */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.list-group {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-group-item {
+  border: none;
+  border-radius: 0;
+  background-color: #f8f9fa; /* Warna latar belakang */
+  margin-bottom: 5px; /* Jarak antar item */
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0; /* Menghilangkan margin bawah pada item terakhir */
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk teks dalam list-group-item */
+.list-group-item {
+  font-size: 16px;
+  color: #212529; /* Warna teks */
+}
+
+.card-block {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.card .card-block p {
+  line-height: 25px;
+}
+
+.b-b-default {
+  border-bottom: 3px solid #000000;
+}

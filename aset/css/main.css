@@ -1,0 +1,11 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary: #62007d;
+  --dark: #320046;
+  --light: rgb(164, 164, 164);
+  --lighter: #eef5ff;
+  --jawir: black;
+}
